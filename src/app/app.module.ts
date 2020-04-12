@@ -13,9 +13,17 @@ import { EffectsModule } from '@ngrx/effects';
 import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 const materialModules = [
-  MatToolbarModule
+  MatToolbarModule,
+  MatChipsModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatButtonModule
 ];
 
 @NgModule({
@@ -31,7 +39,8 @@ const materialModules = [
     AppRoutingModule,
     BrowserModule,
     FlexLayoutModule,
-    MatChipsModule,
+    FormsModule,
+    ReactiveFormsModule,
     ...materialModules,
     HttpClientModule,
     StoreModule.forRoot({}),

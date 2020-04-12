@@ -1,4 +1,30 @@
 .contact__container {
-  max-width: 1250px;
+  max-width: 850px;
   margin: 0 auto;
+  height: calc(100vh - 105px);
+}
+p {
+  color: #666;
+}
+.form {
+  width: 400px;
+}
+button {
+  margin-top: 20px;
+}
+::ng-deep {
+  .mat-fab.mat-primary, .mat-flat-button.mat-primary, .mat-mini-fab.mat-primary, .mat-raised-button.mat-primary {
+    background-color: #d5655a !important;
+    width: 100%;
+    max-width: 150px;
+  }
+  .mat-form-field.mat-focused .mat-form-field-label {
+    color: #d5655a !important;
+  }
+  .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: #d5655a !important;
+  }
+  .mat-form-field {
+    width: 100%;
+  }
 }

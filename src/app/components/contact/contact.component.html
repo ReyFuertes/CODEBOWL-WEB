@@ -1,4 +1,27 @@
-<div class="contact__container" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" fxFlexFill>
-  <h1>Contact page</h1>
-</div>
+<div class="contact__container" fxFlex fxLayout="column" fxLayoutAlign="start center">
+  <div class="content">
+    <div fxLayout="column" fxLayoutAlign="start start"  fxLayoutGap="20px">
+      <h1>Contact <span>Us</span></h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.</p>
 
+      <div fxLayout="column" fxLayoutAlign="start center" class="form" [formGroup]="form">
+        <mat-form-field fxFlex>
+          <mat-label>Fullname</mat-label>
+          <input type="text" matInput placeholder="Fullname">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input type="email" matInput placeholder="Email">
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Message</mat-label>
+          <textarea rows="5" matInput placeholder="Message"></textarea>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
