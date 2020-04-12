@@ -1,0 +1,26 @@
+<div class="landing__container" fxFlex fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px" fxFlexFill>
+  <div class="content">
+    <div fxLayout="column" fxLayoutAlign="start start">
+      <h1>About <span>Us</span></h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="lang" fxLayout="row wrap">
+        <h4>What skills we have:</h4>
+        <mat-chip-list aria-label="Fish selection">
+          <mat-chip *ngFor="let l of lang">{{ l }}</mat-chip>
+        </mat-chip-list>
+      </div>
+      <div class="projects" fxLayout="column">
+        <h4>What projects we are working on: </h4>
+        <div>(Web/Mobile/API)</div>
+        <mat-chip-list aria-label="Fish selection">
+          <mat-chip >Loan Web </mat-chip>
+          <mat-chip class="second">Marketplace Web </mat-chip>
+          <mat-chip class="third">Condo Leasing </mat-chip>
+        </mat-chip-list>
+      </div>
+    </div>
+    <div fxLayoutAlign="end start" fxFlex="40">
+      <img [src]="imgPath + 'man-code.png'" />
+    </div>
+  </div>
+</div>

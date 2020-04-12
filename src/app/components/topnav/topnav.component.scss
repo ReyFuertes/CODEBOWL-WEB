@@ -1,0 +1,43 @@
+.toolbar {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.brand-name {
+  color: #666;
+  font-weight: 600;
+  font-size: 14px;
+}
+.menus > div {
+  outline: none;
+  cursor: pointer;
+  height: 50px;
+  place-content: center flex-end;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 100%;
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
+  &:hover {
+    color: #ae3c24 !important;
+  }
+}
+.active {
+  color: #333 !important;
+}
+::ng-deep {
+  .mat-toolbar-multiple-rows {
+    min-height: 55px !important;
+  }
+  .mat-toolbar-row,
+  .mat-toolbar-single-row {
+    border-radius: 4px;
+    height: 55px !important;
+    padding: 0 30px 0 20px !important;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.005), 0 1px 3px 0 rgba(0, 0, 0, 0.005);
+  }
+}
