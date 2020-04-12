@@ -12,6 +12,10 @@ img {
   color: #666;
   font-weight: 600;
   font-size: 14px;
+  > div {
+    position: relative;
+    top: 2px;
+  }
 }
 .menus > div {
   outline: none;
