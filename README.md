@@ -1,2 +1,2 @@
 ## Codebowl
-![](https://i.imgur.com/ab6nxfz.png)
+![](https://i.imgur.com/Jt3SClE.png)
