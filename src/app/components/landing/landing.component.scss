@@ -4,7 +4,7 @@
 }
 .content {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 40px;
   height: calc(100vh - 115px);
   > div {
     &:first-child {
@@ -33,9 +33,6 @@
           margin-bottom: 10px;
           font-size: 11px;
           color: #888;
-        }
-        .first {
-
         }
         .second {
           background-color: #b4815a;

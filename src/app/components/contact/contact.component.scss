@@ -1,13 +1,19 @@
 .contact__container {
-  max-width: 850px;
+  max-width: 1250px;
   margin: 0 auto;
   height: calc(100vh - 105px);
 }
+.content {
+  width: 100%;
+  padding: 0 40px;
+}
 p {
   color: #666;
+  margin: 0;
 }
 .form {
   width: 400px;
+  margin-top: 20px;
 }
 button {
   margin-top: 20px;
